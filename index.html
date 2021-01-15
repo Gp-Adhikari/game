@@ -18,11 +18,15 @@
 
 <body>
 
-    <video width="400" controls autoplay>
+    <video width="400" controls autoplay muted>
         <source src="rick.mp4" type="video/mp4">
         <source src="rick.mp4" type="video/ogg">
         Your browser does not support HTML video.
     </video>
+
+    <script defer>
+        document.querySelector('video').play();
+    </script>
 
 </body>
 
